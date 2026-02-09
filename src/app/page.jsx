@@ -1,3 +1,5 @@
+import Logo from "./components/clients/Logo";
+
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/page";
 import About from "./components/about/page";
@@ -8,11 +10,10 @@ export default function Home() {
       <Navbar />
 
       <Hero />
-        <div className="bg-white flex justify-center items-center section-width">
-        <img src="/admin-img.png" alt="Easy Lane" className="w-full sm:w-[80%] h-auto" />
-      </div>
+
       <About />
       <Technology />
+      <Logo />
 
     </div>
   );
