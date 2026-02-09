@@ -7,6 +7,7 @@ import Technology from "./components/technology/page";
 import Testimonal from "./components/testimonals/Testimonal";
 import Team from "./components/team/Team";
 import Faq from "./components/faq/Faq";
+import Contact from "./components/contact/Contact";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -19,6 +20,7 @@ export default function Home() {
       <Testimonal />
       <Team />
       <Faq />
+      <Contact />
       <Logo />
 
     </div>
