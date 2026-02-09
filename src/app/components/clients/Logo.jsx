@@ -41,7 +41,7 @@ const Logo = () => {
         <div className="section-width padding-bottom padding-top">
             <div className="flex flex-col items-center text-center pb-10">
               <h6 className="inline-flex items-center justify-center">
-                The Difference{" "}
+                Our Client{" "}
               </h6> 
               <h3 className=" h3-text">
                 Trusted by{" "}

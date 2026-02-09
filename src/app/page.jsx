@@ -17,6 +17,9 @@ export default function Home() {
       <Navbar />
 
       <Hero />
+      <div className="bg-white flex justify-center items-center section-width">
+        <img src="/admin-img.png" alt="Easy Lane" className="w-full sm:w-[80%] h-auto" />
+      </div>
 
       <About />
       <Technology />
@@ -24,10 +27,11 @@ export default function Home() {
       <ProblemStatement />
       <Solution />
       <ChannelPartner />
+      <Logo />
       <Testimonal />
       <Team />
       <Faq />
-      <Logo />
+
 
     </div>
   );
