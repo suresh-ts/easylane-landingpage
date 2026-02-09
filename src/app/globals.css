@@ -1,29 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer components {
+  .section-width {
+    @apply 2xl:max-w-screen-2xl md:w-5/6  mx-auto p-4 items-center;
+  }
+  .section-padding {
+    @apply py-14 md:py-20  lg:py-24;
+  }
+  .padding-top {
+    @apply pt-14 md:pt-20  lg:pt-24;
+  }
+  .padding-bottom {
+    @apply pb-14 md:pb-20  lg:pb-24;
+  }
+  .margin-top {
+    @apply mt-14 md:mt-20  lg:mt-24;
+  }
+  .margin-bottom {
+    @apply mb-14 md:mb-20  lg:mb-24;
+  }
+  .btn-primary {
+    @apply py-2.5 px-10 bg-[#117DFA] text-white font-medium rounded-lg shadow-md hover:bg-[#117DFA] focus:outline-none focus:ring focus:ring-[#117DFA] focus:ring-opacity-75;
+  }
+  .btn-secondary {
+    @apply py-2.5 px-10 bg-primary-blue text-white font-medium rounded-lg shadow-md hover:bg-primary-violet;
+  }
+  .btn-black {
+    @apply bg-white text-black rounded-full py-1.5 px-6 flex items-center gap-4 mx-auto  text-sm md:text-base 2xl:text-lg;
+  }
+  .sec-font{
+  font-family:  "Plus Jakarta Sans", sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  h1 {
+    @apply xl:text-6xl lg:text-5xl md:text-4xl text-white text-3xl font-medium text-center md:leading-tight xl:leading-tight lg:leading-tight mb-10;
+  }
+  h2 {
+    @apply text-black   xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold leading-tight mb-4;
+  }
+  h3 {
+    @apply text-black   xl:text-4xl lg:text-3xl md:text-3xl text-xl font-semibold leading-tight mb-4;
+  }
+  h4 {
+    @apply text-black   xl:text-3xl lg:text-3xl md:text-3xl text-xl font-semibold leading-tight mb-4;
+  }
+  h5 {
+    @apply text-black   md:text-2xl     text-xl font-semibold leading-tight mb-3;
+  }
+  h6 {
+    @apply text-black   md:text-xl     text-lg font-semibold leading-tight mb-2;
+  }
+  p {
+    @apply xl:text-lg   md:text-base text-sm  text-[#383838];
+  }
+}
+.blog-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #1A1A1A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+Body {
+  color: black;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  color: #00000099;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+input,
+textarea {
+  border: 0.5px solid #696969;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.career input,
+select {
+  border: #eee;
+  background-color: #eee;
+  border-radius: 10px;
+  width: 100%;
+  padding: 16px;
+  font-size: 12px;
+  color: #000;
+}
+.career .text-area {
+  border: #eee;
+  background-color: #eee;
+  border-radius: 10px;
+  width: 100%;
+  padding: 16px;
+  font-size: 12px;
+  color: #000;
+}
+
+Link {
+  cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* banner background images */
+.home-bg {
+  background-image: url("../../public/images/home/home-banner-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+  .home-bg {
+    background-image: url("../../public/images/home/mobile-banner.jpg");
+  }
+}
+
+.product-bg {
+  background-image: url("/images/texture/management-texture.svg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.faculty-texture {
+  background-image: url("/images/solution/faculty/faculty-banner.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-texture {
+  background-image: url("/images/products/campus/campus-texture.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-cta-texture {
+  background-image: url("/images/texture/cta-texture.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.demo-bg {
+  background-image: url("/images/contact-form/demo-texture.svg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.about-texture {
+  background-image: url("/images/texture/about-texture.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.campus-bg {
+  background-image: url("/images/products/campus/banner-campus.svg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.fee-management-bg {
+  background-image: url("/images/texture/case-study-texture.svg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.blog-bg {
+  background-image: url("/images/texture/blog-texture.svg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.footer-bg {
+  background-image: url("/images/texture/footer-texture.svg");
+  background-size: cover;
+  background-position: center;
+}
+.student-texture {
+  background-image: url("/images/texture/about-texture.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.management-texture {
+  background-image: url("/images/texture/management-texture.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.case-study-texture {
+  background-image: url("/images/texture/case-study-texture.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog-texture {
+  background-image: url("/images/texture/blog-texture.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.diff-item-1:after {
+  border: 5px #00000030 solid;
+  background-color: #f4f4f4;
+  /* background-color: #83beff; */
+  translate: 35% -50%;
+  /* border-radius: 5px; */
+  width: 4rem;
+  height: 4rem;
+  z-index: 10000000;
+}
+.diff-resizer {
+  width: 28rem;
+}
+.flex-container {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.flex-container::-webkit-scrollbar {
+  display: none;
+}
+.flex-one::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes infinite-scroll-1 {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(-100%);
+  }
+}
+@keyframes infinite-scroll-2 {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.animate-infinite-scroll-1 {
+  animation: infinite-scroll-1 60s linear infinite;
+}
+.animate-infinite-scroll-2 {
+  animation: infinite-scroll-2 80s linear infinite;
+}
+
+.cricle {
+  background: linear-gradient(to bottom, #f1eafb, #f7f1ff 100%);
+  filter: blur(100px);
+  /* width: fit-content; */
+}
+.bg-texture {
+  background-image: url("/images/placements/bg-texture.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cta-texture {
+  background-image: url("/images/products/examinations/secondcta-texture.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* animations */
+.slide-top {
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+}
+.bg-scale {
+  transition: all 500ms;
+}
+.bg-scale:hover {
+  transform: scale(1.1);
+}
+
+.overlay-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(224, 217, 217, 0.5);
+  border-radius: 10px;
+}
+
+/* gray scale on logo */
+
+.gs {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.8;
+  /* filter: alpha(opacity=60); */
+}
+.gs:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .small {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .small2 {
+    padding: 0 40px;
+  }
+  .admission {
+    margin-top: 50px;
+  }
+  .navigation {
+    padding: 15px 0;
+    margin: 30px 30px;
+    border-radius: 10%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero-items {
+    display: none;
+  }
+}
+
+.thank-you-message-admission {
+  color: "#fff";
+}
+.thank-you-message-alumni-a {
+  color: "#fff";
+}
+.thank-you-message-alumni-b {
+  color: "#fff";
+}
+.thank-you-message-college {
+  color: "#fff";
 }
