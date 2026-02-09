@@ -31,16 +31,15 @@ const Logo = () => {
   }, []);
 
   return (
-    <div className="section-padding">
+    <div className="">
       <motion.div
         variants={fadeIn("up")}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        <div className="section-width">
-          <div className="section-width padding-bottom padding-top">
-            <div className="flex flex-col items-center text-center">
+        <div className="section-width padding-bottom padding-top">
+            <div className="flex flex-col items-center text-center pb-10">
               <h6 className="inline-flex items-center justify-center">
                 The Difference{" "}
               </h6> 
@@ -55,7 +54,7 @@ const Logo = () => {
 
 
               </p>
-            </div>
+          
           </div>
 
           {/* Smooth scrolling logos container */}
@@ -70,10 +69,10 @@ const Logo = () => {
                   >
                     <Image
                       src={item}
-                      className="h-auto w-auto max-w-full object-contain max-h-16 md:max-h-20"
+                      className="h-auto w-auto max-w-full object-contain max-h-16 md:max-h-48"
                       alt={`client-${i}`}
-                      height={80}
-                      width={200}
+                      height={1000}
+                      width={1000}
                     />
                   </div>
                 ))}
@@ -88,10 +87,10 @@ const Logo = () => {
                   >
                     <Image
                       src={item}
-                      className="h-auto w-auto max-w-full object-contain max-h-16 md:max-h-20"
+                      className="h-auto w-auto max-w-full object-contain max-h-16 md:max-h-48"
                       alt={`client-clone-${i}`}
-                      height={80}
-                      width={200}
+                      height={1000}
+                      width={1000}
                     />
                   </div>
                 ))}
