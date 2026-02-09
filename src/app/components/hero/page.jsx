@@ -1,22 +1,27 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[url('/hero/image.png')] bg-cover bg-center">
-      <div className="section-width relative flex min-h-screen items-center py-16 md:py-24">
-        <div className="ml-auto max-w-xl text-left md:text-right">
-          <h1 className="text-[#7A63E8] text-right">
-            Hatao Logistics Ka Pain
-          </h1>
-          <p className="mt-5 text-[#1F1F1F]">
+    <section className="relative h-[60vh] lg:min-h-screen w-full overflow-hidden bg-black lg:bg-[url('/hero/image.png')] lg:bg-cover lg:bg-center">
+      <div className="relative flex h-full items-center   px-6">
+        <div className="mx-auto max-w-xl text-center lg:mr-0 ">
+          <h2 className="text-[#7A63E8] text-center sm:text-right">Hatao Logistics Ka Pain</h2>
+          <p className="mt-5 text-white lg:text-[#1F1F1F] text-center sm:text-right lg:max-w-lg">
             Easy Lane empowers fleet owners, promotes entrepreneurship, and
             optimizes logistics across India with tech-driven solutions.
           </p>
-          <div className="mt-6 flex flex-wrap items-center gap-4 md:justify-end">
-            <button className="rounded-full bg-[#6A5AE0] px-6 py-2.5 font-semibold text-white shadow-md transition hover:bg-[#5947d4]">
-              Get Started
-            </button>
-            <button className="rounded-full border border-[#1F1F1F] px-6 py-2.5 font-semibold text-[#1F1F1F] transition hover:bg-black/5">
-              Learn More
-            </button>
+
+          <div className="mt-8 lg:hidden">
+            <div className="overflow-hidden rounded-3xl shadow-2xl">
+              <Image
+                src="/hero/image.png"
+                alt="Easy Lane truck"
+                width={640}
+                height={420}
+                className="h-auto w-full object-cover"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
