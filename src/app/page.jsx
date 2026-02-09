@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Logo from "./components/clients/Logo";
 
 export default function Home() {
   return (
-    <div className="h-screen flex items-center justify-center bg-white text-[#888888] text-4xl">
-      Tailwind v3 is working 🚀
+    <div className="">
+      <Logo />
     </div>
 
   );
