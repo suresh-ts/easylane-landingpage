@@ -56,7 +56,7 @@
     @apply text-black   md:text-2xl     text-xl font-semibold leading-tight mb-3;
   }
   h6 {
-    @apply  px-[10px] py-[3px] text-[15px] font-semibold text-[#824DEB] mb-[14.5px] border border-[#5220C526] rounded-[5px];
+    @apply  px-[10px] py-[3px] text-[15px] font-semibold text-[#824DEB] mb-[16.5px] border border-[#5220C526] rounded-[5px];
   }
   p {
     @apply text-[16px] text-[#0A0226];
