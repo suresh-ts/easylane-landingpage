@@ -7,6 +7,7 @@ import Technology from "./components/technology/page";
 import Testimonal from "./components/testimonals/Testimonal";
 import Team from "./components/team/Team";
 import Faq from "./components/faq/Faq";
+import Contact from "./components/contact/Contact";
 import ProductOverview from "./components/product-overview/page";
 import ProblemStatement from "./components/problem/page";
 import Solution from "./components/solution/page";
@@ -31,6 +32,7 @@ export default function Home() {
       <Testimonal />
       <Team />
       <Faq />
+      <Contact />
 
 
     </div>
