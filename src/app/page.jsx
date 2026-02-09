@@ -4,6 +4,9 @@ import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/page";
 import About from "./components/about/page";
 import Technology from "./components/technology/page";
+import Testimonal from "./components/testimonals/Testimonal";
+import Team from "./components/team/Team";
+import Faq from "./components/faq/Faq";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -13,6 +16,9 @@ export default function Home() {
 
       <About />
       <Technology />
+      <Testimonal />
+      <Team />
+      <Faq />
       <Logo />
 
     </div>
