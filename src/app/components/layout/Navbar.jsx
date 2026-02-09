@@ -4,14 +4,14 @@ import Image from "next/image";
 import { useState } from "react";
 
 const navItems = [
-  "About Us",
-  "Our Technology",
-  "Product Overview",
-  "Our Solution",
-  "Channel Partner",
-  "Our Team",
-  "Career",
-  "Contact Us",
+  { label: "About Us", href: "#about" },
+  { label: "Our Technology", href: "#technology" },
+  { label: "Product Overview", href: "#product-overview" },
+  { label: "Our Solution", href: "#solution" },
+  { label: "Channel Partner", href: "#channel-partner" },
+  { label: "Our Team", href: "#" },
+  { label: "Career", href: "#" },
+  { label: "Contact Us", href: "#" },
 ];
 
 export default function Navbar() {
@@ -58,11 +58,11 @@ export default function Navbar() {
         <nav className="hidden items-center gap-x-6 text-[13px] font-medium text-[#1E1E2F] lg:flex lg:text-sm">
           {navItems.map((item) => (
             <a
-              key={item}
-              href="#"
+              key={item.label}
+              href={item.href}
               className="transition-colors hover:text-[#6A5AE0]"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </nav>
@@ -71,12 +71,12 @@ export default function Navbar() {
         <nav className="section-width flex flex-col gap-3 pb-4 text-sm font-medium text-[#1E1E2F]">
           {navItems.map((item) => (
             <a
-              key={item}
-              href="#"
+              key={item.label}
+              href={item.href}
               className="transition-colors hover:text-[#6A5AE0]"
               onClick={() => setIsOpen(false)}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </nav>

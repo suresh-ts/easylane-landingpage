@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="section-width py-16 md:py-24">
+    <section id="about" className="section-width py-16 md:py-24">
       <div className="grid items-center gap-10 lg:grid-cols-[1fr_0.8fr]">
         <div className="space-y-6 self-start">
           <span className="inline-flex rounded-lg border border-[#E6DDFE] px-4 py-2 text-sm font-semibold text-[#7A63E8]">

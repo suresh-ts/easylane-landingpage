@@ -153,6 +153,12 @@ Link {
   display: none;
 }
 
+/* Product overview icon tint */
+.icon-purple {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(63%) saturate(1211%)
+    hue-rotate(228deg) brightness(96%) contrast(92%);
+}
+
 
 .diff-item-1:after {
   border: 5px #00000030 solid;

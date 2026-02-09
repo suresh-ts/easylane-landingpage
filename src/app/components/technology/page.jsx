@@ -29,7 +29,7 @@ const techItems = [
 
 export default function Technology() {
   return (
-    <section className="section-width py-16 md:py-24">
+    <section id="technology" className="section-width py-16 md:py-24">
       <div className="rounded-[32px] bg-[#F6F5FF] px-6 py-12 md:px-10 md:py-16">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex rounded-lg border border-[#E6DDFE] px-4 py-2 text-sm font-semibold text-[#7A63E8]">
@@ -44,7 +44,7 @@ export default function Technology() {
           {techItems.map((item) => (
             <div
               key={item.title}
-              className="rounded-3xl bg-white px-6 py-10 text-center shadow-sm"
+              className="group relative rounded-3xl bg-white px-6 py-10 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#F3F1FF]">
                 <Image
@@ -54,7 +54,9 @@ export default function Technology() {
                   height={36}
                 />
               </div>
-              <h5 className="mb-3 text-[#1F1F1F]">{item.title}</h5>
+              <h5 className="mb-3 text-[#1F1F1F] transition-colors duration-300 group-hover:text-[#7A63E8]">
+                {item.title}
+              </h5>
               <p className="text-[#2F2F2F]">{item.body}</p>
             </div>
           ))}
