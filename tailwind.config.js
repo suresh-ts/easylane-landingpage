@@ -7,28 +7,32 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "#000",
-        foreground: "var(--foreground)",
-      },
       screens: {
-        'xsss':'320px',
-        'xss': '375px',
-        'xs': '425px',
+        "min-1600": "1600px",
         "3xl": "1800px",
         "4xl": "2000px",
-        "5xl": "2500px",
-        "6xl": "3000px",
       },
-      backgroundImage: {
-        "blue-gradient":
-          "linear-gradient(90deg, rgba(68, 68, 68, 1) 0%, rgba(23, 74, 140, 1) 50%, rgba(255, 255, 255, 1) 100%)",
-        "text-gradient": "linear-gradient(90deg, #909DC1 0%, #3663DE 100%)",
+      colors: {
+        "primary-blue": "#2531B7",
+        "primary-violet": "#1A1AFF",
+        "secondary-violet": "#2F3FD4",
       },
       fontFamily: {
-        optima: ["Optima", "sans-serif"],
+        // Your custom fonts
+      },
+      button: {
+        // Define button styles
+        primary: {
+          backgroundColor: "#YourButtonColor",
+          textColor: "#YourTextColor",
+          // Add more styles as needed
+        },
+        secondary: {
+          backgroundColor: "#YourSecondaryButtonColor",
+          textColor: "#YourSecondaryTextColor",
+          // Add more styles as needed
+        },
       },
     },
   },
-  plugins: [],
 };
