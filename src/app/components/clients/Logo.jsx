@@ -26,7 +26,7 @@ const Logo = () => {
     const firstChild = scrollElement.firstElementChild;
     if (firstChild) {
       const scrollWidth = firstChild.scrollWidth;
-      scrollElement.style.setProperty('--scroll-width', `${scrollWidth}px`);
+      scrollElement.style.setProperty("--scroll-width", `${scrollWidth}px`);
     }
   }, []);
 
@@ -39,10 +39,25 @@ const Logo = () => {
         viewport={{ once: true, amount: 0.25 }}
       >
         <div className="section-width">
-          <div className="text-center mb-8 font-medium">
-            <p className="text-black text-2xl font-bold">Trusted by Leading Institutes</p>
+          <div className="section-width padding-bottom padding-top">
+            <div className="flex flex-col items-center text-center">
+              <h6 className="inline-flex items-center justify-center">
+                The Difference{" "}
+              </h6> 
+              <h3 className=" h3-text">
+                Trusted by{" "}
+                <span className="text-[#824DEB]">
+                  Industry Leaders
+                </span>
+              </h3>
+              <p className="max-w-md text-sm font-normal sm:text-base text-[#0A0226]">
+               Partnering with top brands to drive innovation and efficiency in logistics across various industries.
+
+
+              </p>
+            </div>
           </div>
-          
+
           {/* Smooth scrolling logos container */}
           <div className="w-full overflow-hidden relative">
             <div ref={scrollRef} className="flex animate-ultra-smooth">
@@ -63,7 +78,7 @@ const Logo = () => {
                   </div>
                 ))}
               </div>
-              
+
               {/* Duplicated set for seamless loop */}
               <div className="flex shrink-0">
                 {clientLogo.map((item, i) => (
@@ -82,7 +97,7 @@ const Logo = () => {
                 ))}
               </div>
             </div>
-            
+
             {/* White overlay gradients for smooth fade effect */}
             <div className="absolute left-0 top-0 h-full w-16 md:w-24 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
             <div className="absolute right-0 top-0 h-full w-16 md:w-24 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>

@@ -56,12 +56,20 @@
     @apply text-black   md:text-2xl     text-xl font-semibold leading-tight mb-3;
   }
   h6 {
-    @apply text-black   md:text-xl     text-lg font-semibold leading-tight mb-2;
+    @apply  px-[10px] py-[3px] text-[15px] font-semibold text-[#824DEB] mb-[14.5px] border border-[#5220C526] rounded-[5px];
   }
   p {
-    @apply xl:text-lg   md:text-base text-sm  text-[#383838];
+    @apply text-[16px] text-[#0A0226];
     font-family: "Inter", sans-serif;
+    margin: 0 0 10px;
   }
+}
+.h3-text{
+  font-size: 40px;
+  font-weight: 600;
+  color: #0A0226;
+  margin-bottom: 20px;
+
 }
 .blog-heading {
   font-size: 32px;
