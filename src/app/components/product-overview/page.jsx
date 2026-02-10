@@ -26,11 +26,11 @@ export default function ProductOverview() {
   return (
     <section id="product-overview" className="section-width py-16 md:py-24">
       <div className="text-center">
-        <span className="inline-flex rounded-lg border border-[#E6DDFE] px-4 py-2 text-sm font-semibold text-[#7A63E8]">
+        <span className="inline-flex rounded-lg border border-[#E6DDFE] px-4 py-2 text-sm font-semibold text-[#824DEB]">
           Product Overview
         </span>
         <h2 className="mt-5">
-          Streamlined <span className="text-[#7A63E8]">Logistics Management</span>{" "}
+          Streamlined <span className="text-[#824DEB]">Logistics Management</span>{" "}
           with Easy Lane
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-[#2F2F2F]">
@@ -43,9 +43,9 @@ export default function ProductOverview() {
       <div className="mt-14 grid gap-10 lg:grid-cols-3">
         {overviewItems.map((item) => (
           <div key={item.title} className="group flex items-start gap-6">
-            <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#F3F1FF] transition-colors duration-300 group-hover:bg-[#7A63E8]">
+            <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#F3F1FF] transition-colors duration-300 group-hover:bg-[#824DEB]">
               {item.type === "icon" ? (
-                <AiOutlinePieChart className="h-9 w-9 text-[#7A63E8] transition-colors duration-300 group-hover:text-white" />
+                <AiOutlinePieChart className="h-9 w-9 text-[#824DEB] transition-colors duration-300 group-hover:text-white" />
               ) : (
                 <Image
                   src={item.icon}
@@ -57,7 +57,7 @@ export default function ProductOverview() {
               )}
             </div>
             <div>
-              <h5 className="mb-2 text-[#1F1F1F] transition-colors duration-300 group-hover:text-[#7A63E8]">
+              <h5 className="mb-2 text-[#1F1F1F] transition-colors duration-300 group-hover:text-[#824DEB]">
                 {item.title}
               </h5>
               <p className="text-[#2F2F2F]">{item.body}</p>

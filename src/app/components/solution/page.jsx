@@ -30,7 +30,7 @@ const solutions = [
 
 export default function Solution() {
   return (
-    <section id="solution" className="w-full bg-[#0b0226] py-16 md:py-24">
+    <section id="solution" className="w-full bg-[#0b0226] padding-bottom">
       <div className="section-width">
         <div className="text-center text-white">
           <span className="inline-flex rounded-md border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white/90">
@@ -38,7 +38,7 @@ export default function Solution() {
           </span>
           <h2 className="mt-5 text-white">
             Smart Solutions for{" "}
-            <span className="text-[#7A63E8]">Streamlined Logistics</span>
+            <span className="text-[#824DEB]">Streamlined Logistics</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-white/70">
             Optimize operations with cutting-edge technology, load management,

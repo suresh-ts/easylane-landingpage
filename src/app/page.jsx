@@ -15,6 +15,7 @@ import Solution from "./components/solution/page";
 import ChannelPartner from "./components/channel-partner/page";
 import Banner from "./components/banner/Banner";
 import Footer from "./components/layout/footer/Footer";
+import FadeInSection from "./components/common/FadeInSection";
 export default function Home() {
   return (
     <div className="footer-reveal min-h-screen">
@@ -22,27 +23,53 @@ export default function Home() {
         <Navbar />
 
         <Hero />
-        <div className="bg-white flex justify-center items-center section-width">
-          <img
-            src="/admin-img.png"
-            alt="Easy Lane"
-            className="w-full sm:w-[80%] h-auto"
-          />
-        </div>
+        <FadeInSection>
+          <div className="bg-white flex justify-center padding-top items-center section-width">
+            <img
+              src="/admin-img.png"
+              alt="Easy Lane"
+              className="w-full sm:w-[80%] h-auto"
+            />
+          </div>
+        </FadeInSection>
 
-        <About />
-        <Technology />
-        <ProductOverview />
-        <ProblemStatement />
-        <Solution />
-        <ChannelPartner />
-        <Logo />
-        <Testimonal />
-        <Team />
-        <Faq />
-        <Contact />
-        <Career />
-        <Banner />
+        <FadeInSection>
+          <About />
+        </FadeInSection>
+        <FadeInSection>
+          <Technology />
+        </FadeInSection>
+        <FadeInSection>
+          <ProductOverview />
+        </FadeInSection>
+        <FadeInSection>
+          <ProblemStatement />
+        </FadeInSection>
+          <Solution />
+        <FadeInSection>
+          <ChannelPartner />
+        </FadeInSection>
+        <FadeInSection>
+          <Logo />
+        </FadeInSection>
+        <FadeInSection>
+          <Testimonal />
+        </FadeInSection>
+        <FadeInSection>
+          <Team />
+        </FadeInSection>
+        <FadeInSection>
+          <Faq />
+        </FadeInSection>
+        <FadeInSection>
+          <Contact />
+        </FadeInSection>
+        <FadeInSection>
+          <Career />
+        </FadeInSection>
+        <FadeInSection>
+          <Banner />
+        </FadeInSection>
       </div>
       <Footer className="footer-reveal__footer" />
     </div>

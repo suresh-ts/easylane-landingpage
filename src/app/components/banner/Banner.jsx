@@ -56,12 +56,12 @@ const Banner = () => {
       <div className="relative overflow-hidden rounded-xl bg-[#834deb] px-6 py-10 sm:px-10 md:px-12 md:py-12 min-[1350px]:h-[420px] min-[1350px]:pl-16 min-[1350px]:py-0">
         <div className="grid items-center gap-10 min-[1350px]:grid-cols-[1.05fr_0.95fr]">
           <div className="max-w-full min-[1350px]:max-w-[370px]">
-            <h3 className="font-medium text-white">
+            <h3 className="font-semibold text-white">
               Supercharge Your
               <br />
               Logistics Operations
             </h3>
-            <p className="mt-5 max-w-full font-light text-[16px] text-white/90 min-[1350px]:max-w-[370px]">
+            <p className="mt-5 max-w-full text-white/90 min-[1350px]:max-w-[370px]">
               It&apos;s time to take control of your logistics with Easy Lane&apos;s
               innovative platform. Achieve greater efficiency, reduce costs,
               and grow your business with ease.

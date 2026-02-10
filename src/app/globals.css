@@ -43,10 +43,10 @@
     @apply xl:text-6xl lg:text-5xl md:text-4xl text-white text-3xl font-medium text-center md:leading-tight xl:leading-tight lg:leading-tight mb-10;
   }
   h2 {
-    @apply text-black   xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold leading-tight mb-4;
+    @apply text-black   xl:text-[40px] lg:text-4xl md:text-3xl text-2xl font-semibold leading-tight mb-4;
   }
   h3 {
-    @apply text-black   xl:text-4xl lg:text-3xl md:text-3xl text-xl font-semibold leading-tight mb-4;
+    @apply text-black   xl:text-4xl lg:text-3xl md:text-3xl text-2xl font-semibold leading-tight mb-4;
   }
   h4 {
     @apply text-black   xl:text-3xl lg:text-3xl md:text-3xl text-xl font-semibold leading-tight mb-4;
@@ -58,7 +58,7 @@
     @apply  px-[10px] py-[3px] text-[15px] font-semibold text-[#824DEB] mb-[16.5px] border border-[#5220C526] rounded-[5px];
   }
   p {
-    @apply text-[16px] text-[#0A0226];
+    @apply text-[14px] text-[#0A0226] md:text-[16px];
     font-family: "Inter", sans-serif;
     margin: 0 0 10px;
   }
@@ -85,6 +85,10 @@ html {
 Body {
   color: black;
   background-color: white;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.vietnam{
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
@@ -149,7 +153,7 @@ Link {
 /* Footer reveal effect */
 .footer-reveal {
   position: relative;
-  --footer-height: 520px;
+  --footer-height: 560px;
 }
 .footer-reveal__content {
   position: relative;
@@ -172,7 +176,7 @@ Link {
 
 @media screen and (max-width: 490px) {
 .footer-reveal {
-    --footer-height: 420px;
+    --footer-height: 480px;
   }
 }
 
@@ -232,6 +236,9 @@ Link {
 }
 .animate-infinite-scroll-2 {
   animation: infinite-scroll-2 80s linear infinite;
+}
+.footer-font{
+  font-family: "Belgrano", serif;
 }
 
 .cricle {

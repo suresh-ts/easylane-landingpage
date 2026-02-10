@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-[60vh] lg:min-h-screen w-full overflow-hidden bg-black lg:bg-[url('/hero/image.png')] lg:bg-cover lg:bg-center">
+    <section className="relative h-[85vh] md:h-[60vh] lg:min-h-screen w-full overflow-hidden bg-black lg:bg-[url('/hero/image.png')] lg:bg-cover lg:bg-center">
       <div className="relative flex h-full items-center   px-6">
         <div className="mx-auto max-w-xl text-center lg:mr-0 ">
-          <h2 className="text-[#7A63E8] text-center sm:text-right">Hatao Logistics Ka Pain</h2>
-          <p className="mt-5 text-white lg:text-[#1F1F1F] text-center sm:text-right lg:max-w-lg">
-            Easy Lane empowers fleet owners, promotes entrepreneurship, and
-            optimizes logistics across India with tech-driven solutions.
+          <h2 className="text-[#824DEB] text-[35px] text-center sm:text-right">Hatao Logistics Ka Pain</h2>
+          <p className="mt-5 text-white lg:text-[#0A0226] text-center sm:text-right lg:max-w-lg">
+            Easy Lane empowers fleet owners, promotes <br className="hidden lg:block" /> entrepreneurship, and
+            optimizes logistics across <br className="hidden lg:block" /> India with tech-driven solutions.
           </p>
 
           <div className="mt-8 lg:hidden">

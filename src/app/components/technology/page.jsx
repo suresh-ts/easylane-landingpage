@@ -29,15 +29,15 @@ const techItems = [
 
 export default function Technology() {
   return (
-    <section id="technology" className="section-width py-16 md:py-24">
+    <section id="technology" className="section-width padding-top">
       <div className="rounded-[32px] bg-[#F6F5FF] px-6 py-12 md:px-10 md:py-16">
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-lg border border-[#E6DDFE] px-4 py-2 text-sm font-semibold text-[#7A63E8]">
+        <div className="mx-auto max-w-5xl text-center">
+          <span className="inline-flex rounded-lg border border-[#E6DDFE] px-4 py-2 text-sm font-semibold text-[#824DEB]">
             Our Technology
           </span>
           <h2 className="mt-5">
-            Efficient <span className="text-[#7A63E8]">Logistics</span> Through{" "}
-            <span className="text-[#7A63E8]">Innovative Technology</span>
+            Efficient <span className="text-[#824DEB]">Logistics</span> Through{" "}
+            <span className="text-[#824DEB]">Innovative Technology</span>
           </h2>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -54,7 +54,7 @@ export default function Technology() {
                   height={36}
                 />
               </div>
-              <h5 className="mb-3 text-[#1F1F1F] transition-colors duration-300 group-hover:text-[#7A63E8]">
+              <h5 className="mb-3 text-[#1F1F1F] transition-colors duration-300 group-hover:text-[#824DEB]">
                 {item.title}
               </h5>
               <p className="text-[#2F2F2F]">{item.body}</p>

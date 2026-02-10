@@ -5,11 +5,14 @@ const leadership = [
     name: "Aryaman Shukla",
     role: "Co-Founder/Director",
     image: "/home/leaders/i1.jpg",
+    linkedin:
+      "https://www.linkedin.com/in/aryaman-shukla-8064a720b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     name: "Amit Tomar",
     role: "Head Operations",
     image: "/home/leaders/i2.jpg",
+    linkedin: "https://www.linkedin.com/in/amit-tomar-4b3a29106/",
   },
 ];
 
@@ -17,6 +20,7 @@ const mentor = {
   name: "Vishal Kanodia",
   role: "Chairman - Kanodia Group of Companies",
   image: "/home/leaders/i3.jpg",
+  linkedin: "https://www.linkedin.com/in/kanodiagroup/",
 };
 
 const Team = () => {
@@ -54,12 +58,15 @@ const Team = () => {
                 {member.name}
               </h5>
               <p className="text-[15px] text-[#0A0226]">{member.role}</p>
-              <span
+              <a
                 className="mt-4 inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#a1a1a1] text-[10px] font-semibold text-white"
                 aria-label="LinkedIn"
+                href={member.linkedin}
+                target="_blank"
+                rel="noreferrer"
               >
                 in
-              </span>
+              </a>
             </div>
           ))}
         </div>
@@ -85,12 +92,15 @@ const Team = () => {
               {mentor.name}
             </h5>
             <p className="text-[15px] text-[#0A0226]">{mentor.role}</p>
-            <span
+            <a
               className="mt-4 inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#a1a1a1] text-[10px] font-semibold text-white"
               aria-label="LinkedIn"
+              href={mentor.linkedin}
+              target="_blank"
+              rel="noreferrer"
             >
               in
-            </span>
+            </a>
           </div>
         </div>
       </div>

@@ -5,14 +5,14 @@ export default function About() {
     <section id="about" className="section-width py-16 md:py-24">
       <div className="grid items-center gap-10 lg:grid-cols-[1fr_0.8fr]">
         <div className="space-y-6 self-start">
-          <span className="inline-flex rounded-lg border border-[#E6DDFE] px-4 py-2 text-sm font-semibold text-[#7A63E8]">
+          <span className="inline-flex rounded-lg border border-[#E6DDFE] px-4 py-2 text-sm font-semibold text-[#824DEB]">
             About Us
           </span>
           <div className="space-y-3">
-            <h2 className="text-[#7A63E8]">
+            <h2 className="text-[#824DEB]">
               Revolutionizing Logistics <span className="text-black">for the Future</span> 
             </h2>
-            <p>
+            <p className="max-w-md">
               Easy Lane is transforming logistics with tech-driven solutions,
               empowering fleet-owners to become entrepreneurs and helping
               businesses grow, all while bringing order and innovation to the

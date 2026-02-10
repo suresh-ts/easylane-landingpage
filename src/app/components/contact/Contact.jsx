@@ -16,9 +16,9 @@ const Contact = () => {
   const SERVICE_ID =
     process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
   const TEMPLATE_ID =
-    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
+    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_d6mr98n";
   const PUBLIC_KEY =
-    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
+    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "yEbhfrTy5Jltra8Br";
 
   useEffect(() => {
     let isMounted = true;
