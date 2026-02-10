@@ -6,7 +6,7 @@ const Career = () => {
       <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
           <h6 className="inline-flex items-center justify-center">Career</h6>
-          <h3 className="mt-3 text-[40px] font-semibold text-[#0A0226]">
+          <h3 className="mt-3  font-semibold text-[#0A0226]">
             Join Our Team at EasyLane!
           </h3>
           <p className="mt-5 max-w-sm text-[#0A0226]">

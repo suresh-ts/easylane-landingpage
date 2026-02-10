@@ -27,7 +27,7 @@ const Testimonal = () => {
           <h6 className="inline-flex items-center justify-center">
             Client Testimonials
           </h6>
-          <h3 className="text-[40px] font-semibold text-[#0A0226] mb-3">
+          <h3 className=" font-semibold text-[#0A0226] mb-3">
             Success Stories from Our Partners
           </h3>
           <p className="mx-auto max-w-2xl">

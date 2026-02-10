@@ -43,7 +43,7 @@ const Logo = () => {
               <h6 className="inline-flex items-center justify-center">
                 Our Client{" "}
               </h6> 
-              <h3 className=" h3-text">
+              <h3 className="">
                 Trusted by{" "}
                 <span className="text-[#824DEB]">
                   Industry Leaders

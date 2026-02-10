@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Belgrano&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -64,13 +63,7 @@
     margin: 0 0 10px;
   }
 }
-.h3-text{
-  font-size: 40px;
-  font-weight: 600;
-  color: #0A0226;
-  margin-bottom: 20px;
 
-}
 .blog-heading {
   font-size: 32px;
   font-weight: 700;
@@ -173,7 +166,13 @@ Link {
 }
 @media (max-width: 768px) {
   .footer-reveal {
-    --footer-height: 360px;
+    --footer-height: 490px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+.footer-reveal {
+    --footer-height: 420px;
   }
 }
 

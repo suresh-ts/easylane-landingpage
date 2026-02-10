@@ -14,7 +14,7 @@ import ProblemStatement from "./components/problem/page";
 import Solution from "./components/solution/page";
 import ChannelPartner from "./components/channel-partner/page";
 import Banner from "./components/banner/Banner";
-import Footer from "./components/footer/Footer";
+import Footer from "./components/layout/footer/Footer";
 export default function Home() {
   return (
     <div className="footer-reveal min-h-screen">
