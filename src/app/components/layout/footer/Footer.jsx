@@ -69,7 +69,7 @@ const socialLinks = [
 const Footer = ({ className = "" }) => {
   return (
     <footer className={`bg-white ${className}`.trim()}>
-      <div className="section-width py-16 text-center md:py-20">
+      <div className="section-width  text-center md:py-20">
         <div className="flex justify-center">
           <Image
             src="/logo.svg"
@@ -80,7 +80,7 @@ const Footer = ({ className = "" }) => {
           />
         </div>
 
-        <p className="mt-6 text-[26px] font-medium text-[#7B61FF] md:text-[30px]">
+        <p className="mt-6 font-belgrano text-[26px] font-medium text-[#7B61FF] md:text-[30px]">
           Hatao Logistics Ka Pain
         </p>
 

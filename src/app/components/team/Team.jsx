@@ -25,7 +25,7 @@ const Team = () => {
       <div className="section-width py-16 md:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h6 className="inline-flex items-center justify-center">Our Team</h6>
-          <h3 className="text-[40px] font-semibold text-[#0A0226] mb-3">
+          <h3 className="font-semibold text-[#0A0226] mb-3">
             Meet the Visionaries at{" "}
             <span className="text-[#824DEB]">Easy Lane</span>
           </h3>

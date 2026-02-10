@@ -48,7 +48,7 @@ const Faq = () => {
           <h6 className="inline-flex items-center justify-center">
             Frequently Asked Questions
           </h6>
-          <h3 className="text-[40px] font-semibold text-[#0A0226] mb-3">
+          <h3 className="font-semibold text-[#0A0226] mb-3">
             Everything You{" "}
             <span className="text-[#824DEB]">Need to Know</span>
           </h3>
@@ -95,7 +95,7 @@ const Faq = () => {
                       : "0px",
                 }}
               >
-                <p className="px-6 pb-6 text-[15px] text-[#0A0226]">
+                <p className="px-6 pb-6 text-[#0A0226]">
                   {question.content}
                 </p>
               </div>

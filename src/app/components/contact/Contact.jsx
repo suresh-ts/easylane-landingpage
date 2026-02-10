@@ -137,7 +137,7 @@ const Contact = () => {
 <div className="grid overflow-hidden rounded-[24px] bg-[#F6F5FF] lg:grid-cols-[1.1fr_0.9fr] lg:gap-x-10">
         <div className="px-6 py-10 md:px-10 md:py-14">
           <h6 className="inline-flex items-center justify-center">Contact Us</h6>
-          <h3 className="mt-2 text-[36px] font-semibold text-[#0A0226] md:text-[40px]">
+          <h3 className="mt-2  font-semibold text-[#0A0226] md:text-[40px]">
             Get in Touch with Easy Lane
           </h3>
           <p className="mt-4 max-w-md text-[#0A0226]">

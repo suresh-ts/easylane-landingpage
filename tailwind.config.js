@@ -18,7 +18,7 @@ module.exports = {
         "secondary-violet": "#2F3FD4",
       },
       fontFamily: {
-        // Your custom fonts
+        belgrano: ["Belgrano", "serif"],
       },
       button: {
         // Define button styles
