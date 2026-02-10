@@ -25,7 +25,7 @@ const mentor = {
 
 const Team = () => {
   return (
-    <section className="bg-white">
+    <section id="team" className="bg-white">
       <div className="section-width py-16 md:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h6 className="inline-flex items-center justify-center">Our Team</h6>

@@ -133,7 +133,7 @@ const Contact = () => {
     }
   };
   return (
-    <section className="section-width py-16 md:py-24">
+    <section id="contact" className="section-width py-16 md:py-24">
 <div className="grid overflow-hidden rounded-[24px] bg-[#F6F5FF] lg:grid-cols-[1.1fr_0.9fr] lg:gap-x-10">
         <div className="px-6 py-10 md:px-10 md:py-14">
           <h6 className="inline-flex items-center justify-center">Contact Us</h6>

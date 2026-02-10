@@ -9,9 +9,9 @@ const navItems = [
   { label: "Product Overview", href: "#product-overview" },
   { label: "Our Solution", href: "#solution" },
   { label: "Channel Partner", href: "#channel-partner" },
-  { label: "Our Team", href: "#" },
-  { label: "Career", href: "#" },
-  { label: "Contact Us", href: "#" },
+  { label: "Our Team", href: "#team" },
+  { label: "Career", href: "#career" },
+  { label: "Contact Us", href: "#contact" },
 ];
 
 export default function Navbar() {

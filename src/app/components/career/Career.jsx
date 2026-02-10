@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Career = () => {
   return (
-    <section className="section-width py-16 md:py-24">
+    <section id="career" className="section-width py-16 md:py-24">
       <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
           <h6 className="inline-flex items-center justify-center">Career</h6>
