@@ -8,33 +8,43 @@ import Testimonal from "./components/testimonals/Testimonal";
 import Team from "./components/team/Team";
 import Faq from "./components/faq/Faq";
 import Contact from "./components/contact/Contact";
+import Career from "./components/career/Career";
 import ProductOverview from "./components/product-overview/page";
 import ProblemStatement from "./components/problem/page";
 import Solution from "./components/solution/page";
 import ChannelPartner from "./components/channel-partner/page";
+import Banner from "./components/banner/Banner";
+import Footer from "./components/footer/Footer";
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
+    <div className="footer-reveal min-h-screen">
+      <div className="footer-reveal__content">
+        <Navbar />
 
-      <Hero />
-      <div className="bg-white flex justify-center items-center section-width">
-        <img src="/admin-img.png" alt="Easy Lane" className="w-full sm:w-[80%] h-auto" />
+        <Hero />
+        <div className="bg-white flex justify-center items-center section-width">
+          <img
+            src="/admin-img.png"
+            alt="Easy Lane"
+            className="w-full sm:w-[80%] h-auto"
+          />
+        </div>
+
+        <About />
+        <Technology />
+        <ProductOverview />
+        <ProblemStatement />
+        <Solution />
+        <ChannelPartner />
+        <Logo />
+        <Testimonal />
+        <Team />
+        <Faq />
+        <Contact />
+        <Career />
+        <Banner />
       </div>
-
-      <About />
-      <Technology />
-      <ProductOverview />
-      <ProblemStatement />
-      <Solution />
-      <ChannelPartner />
-      <Logo />
-      <Testimonal />
-      <Team />
-      <Faq />
-      <Contact />
-
-
+      <Footer className="footer-reveal__footer" />
     </div>
   );
 }

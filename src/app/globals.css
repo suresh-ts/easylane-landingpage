@@ -153,6 +153,30 @@ Link {
   display: none;
 }
 
+/* Footer reveal effect */
+.footer-reveal {
+  position: relative;
+  --footer-height: 520px;
+}
+.footer-reveal__content {
+  position: relative;
+  z-index: 10;
+  background: white;
+  margin-bottom: var(--footer-height);
+}
+.footer-reveal__footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .footer-reveal {
+    --footer-height: 360px;
+  }
+}
+
 /* Product overview icon tint */
 .icon-purple {
   filter: brightness(0) saturate(100%) invert(40%) sepia(63%) saturate(1211%)
