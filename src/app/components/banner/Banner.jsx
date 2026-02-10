@@ -84,7 +84,7 @@ const Banner = () => {
             </div>
             <div
               ref={imageMidRef}
-              className="absolute -bottom-9 right-[35%] xl:w-[80%] 2xl:w-[60%] rotate-[10deg] xl:-bottom-4 xl:right-[30%] 2xl:-bottom-9 2xl:right-[35%]"
+              className="absolute -bottom-10 right-[35%] xl:w-[80%] 2xl:w-[60%] rotate-[10deg] xl:-bottom-4 xl:right-[30%] 2xl:-bottom-9 2xl:right-[35%]"
             >
               <Image
                 src="/home/banner/bottom-right.jpg"
